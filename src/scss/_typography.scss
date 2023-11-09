@@ -2,54 +2,65 @@
 
 
 body {
-  font-size: clamp(#{$font-size-base}, 1rem, 2rem);
+  font-size: $font-size-base;
   line-height: $line-height-base;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+p, .p, .body-text {
+  font-size: $font-size-base;
+  line-height: $line-height-p;
+  margin-bottom: $margin-bottom;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: $font-weight-bold;
 }
 
-h1, .h-1 {
-  font-size: clamp(#{$font-size-h1}, 2rem, 4rem);
+h1, .h1 {
+  font-size: clamp(#{$font-size-h1-mobile}, 1.33328rem + 1.852vw, #{$font-size-h1});
   line-height: $line-height-h1;
 }
 
-h2, .h-2 {
-  font-size: clamp(#{$font-size-h2}, 1.5rem, 3rem);
+h2, .h2 {
+  font-size: clamp(#{$font-size-h2-mobile}, 0.99996rem + 1.389vw, #{$font-size-h2});
   line-height: $line-height-h2;
 }
 
-h3, .h-3 {
-  font-size: clamp(#{$font-size-h3}, 1.25rem, 2.5rem);
-  line-height: $line-height-h3;
+h3, .h3 {
+  font-size: clamp(#{$font-size-h3-mobile}, 1.18758rem + 0.347vw, #{$font-size-h3});
+  line-height: clamp(#{$line-height-h3-mobile}, 1.18758rem + 0.347vw, #{$line-height-h3});
 }
 
-h4, .h-4 {
-  font-size: clamp(#{$font-size-h4}, 1.125rem, 2rem);
-  line-height: $line-height-h4;
+h4, .h4 {
+  font-size: clamp(#{$font-size-h4-mobile}, 1.00008rem + 0.347vw, #{$font-size-h4});
+  line-height: $line-height-h4
 }
 
-h5, .h-5 {
-  font-size: clamp(#{$font-size-h5}, 1rem, 1.75rem);
-  line-height: $line-height-h5;
+h5, .h5 {
+  font-size: clamp(#{$font-size-h5-mobile}, 0.77074rem + 0.116vw, #{$font-size-h5});
+  line-height: clamp(#{$line-height-h5-mobile}, 1.18758rem + 0.347vw, #{$line-height-h5});
 }
 
-h6, .h-6 {
-  font-size: clamp(#{$font-size-h6}, 0.875rem, 1.5rem);
+h6, .h6 {
+  font-size: $font-size-h6;
   line-height: $line-height-h6;
 }
 
+
+
 .lead {
-  font-size: clamp(#{$font-size-lead}, 1rem, 2rem);
+  font-size: clamp($font-size-lead-mobile, 1rem + 0vw, #{$font-size-lead});
   line-height: $line-height-lead;
 }
 
-.small {
-  font-size: clamp(#{$font-size-small}, 0.75rem, 1.25rem);
-  line-height: $line-height-small;
+.btn {
+  font-size: clamp($font-size-lead-mobile, 1rem + 0vw, #{$font-size-lead});
+  line-height: $line-height-lead;
 }
 
-p, .p {
-  margin-bottom: $margin-bottom;
+.btn {
+  font-size: clamp($font-size-lead-mobile, 1rem + 0vw, #{$font-size-lead});
+  line-height: $line-height-lead;
 }
+
+
